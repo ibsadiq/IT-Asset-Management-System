@@ -1,0 +1,38 @@
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IT Inventory</title>
+<meta name="description"
+  content="Inventory system fot IT Assets">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+  rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static',filename='images/logo.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static',filename='images/logo.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static',filename='images/logo.png')}}">
+<link rel="icon" type="image/png" href="{{url_for('static',filename='images/logo.png')}}">
+<link rel="manifest" href="https://flowbite-admin-dashboard.vercel.app/site.webmanifest">
+<link rel="mask-icon" href="{{url_for('static',filename='images/logo.png')}}" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+<script>
+
+  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+</script>
